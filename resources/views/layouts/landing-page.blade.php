@@ -7,7 +7,7 @@
     <title>Dewi Laundry</title>
 
     <!-- Connect CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/landing-page.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

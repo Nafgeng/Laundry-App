@@ -1,0 +1,419 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+}
+
+:root{
+    --color-primary:#6C4AB6;
+    --color-secondary:#FFB544;
+
+    /* Text Color */
+    --color-text:#432C7A;
+
+    /* Data Color */
+    --data-succes:#0FCC8C;
+    --data-warning:#FFB544;
+    --data-ready:#6C4AB6;
+
+    /* transisi */
+    --transition: all 400ms ease;
+}
+
+/* --------------------- Navbar --------------------- */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.navbar-item{
+    margin: 10px 20px;
+}
+
+.toggle{
+    margin: 0 20px;
+    display: none;
+}
+
+.navbar-link{
+    color: white;
+    transition: var(--transition);
+}
+
+.navbar-link:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+}
+
+.navbar-button{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: var(--color-text);
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar-navigate {
+    display: flex;
+    gap: 0.5rem;
+}
+/* ---------------------  End Navbar --------------------- */
+
+/* --------------------- Header --------------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bg_image{
+    background: linear-gradient(90.12deg, #3F2082 28.65%, rgba(108, 74, 182, 0) 99.92%), url(./img/headerimg.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_container{
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    padding: 40px;
+}
+
+.span {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.header_title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header_title h1{
+    font-size: 3rem;
+}
+
+.header_text{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn_start{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--color-secondary);
+    color: var(--color-text);
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* --------------------- End Header --------------------- */
+
+/* --------------------- About --------------------- */
+main {
+    width: 75%;
+    margin: auto;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem auto;
+}
+
+.about_text p {
+    width: 400px;
+}
+
+.about_title{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.about_value{
+    margin: 2rem 0;
+    color: var(--color-text);
+}
+
+.order_direct{
+    color: var(--color-primary);
+}
+
+.img_about{
+    width: 400px;
+    height: auto;
+}
+/* --------------------- End About --------------------- */
+
+/* --------------------- Why Us --------------------- */
+.title_whyus {
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+.box-title {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.box-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #FFB544, #FF7A00);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.box-text {
+    text-align: center;
+    color: white;
+    margin: 3px;
+}
+
+.box-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 40px;
+    color: #4B2B90;
+}
+/* --------------------- End Of Why Us --------------------- */
+
+/* --------------------- Jenis Laundry --------------------- */
+.title_jenis h3{
+    text-align: center;
+    color: #A38ADC;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.title_jenis h2{
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.jenis_list{
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.title_about_jenis, .value_jenis{
+    color: white;
+    padding: 1rem;
+}
+
+.jenis_item1{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(./img/list1.jpg);
+    background-size: cover;
+}
+
+.jenis_item2{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(./img/list2.jpg);
+    background-size: cover;
+}
+
+.jenis_item3{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(./img/list3.jpg);
+    background-size: cover;
+}
+/* --------------------- End Of Jenis Laundry --------------------- */
+
+/* --------------------- Contact Us --------------------- */
+.contact_us{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem auto;
+    color: var(--color-primary);
+}
+
+.contact_title{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 10rem;
+}
+
+.contact_flex{
+    display: flex;
+    align-items: center;
+}
+
+.contact_flex p{
+    margin-left: 1rem;
+}
+/* --------------------- End Contact Us --------------------- */
+
+
+
+/* --------------------- Responsive Mobile --------------------- */
+@media screen and (max-width:480px) {
+    .navbar{
+        visibility: hidden;
+    }
+
+    .header_container{
+        margin-bottom: 20rem;
+    }
+
+    .btn_start{
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about_title{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about_value{
+        text-align: center;
+    }
+
+    .order_direct{
+        text-align: center;
+    }
+
+    .title_whyus{
+        place-items: center;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .box{
+        margin: 1rem auto;
+        align-items: center;
+    }
+
+    .title_jenis h3{
+        margin-top: 40rem;
+    }
+
+    .jenis_list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
+    .jenis_item1, .jenis_item2, .jenis_item3{
+        margin: 1rem auto;
+    }
+
+    .contact_title{
+        text-align: center;
+    }
+
+    .contact_us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
+    .contact_flex{
+        margin: 1.5rem auto;
+    }
+}
+/* --------------------- End Of Responsive Mobile --------------------- */

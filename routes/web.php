@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DataController;
 use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
@@ -14,3 +15,16 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'home']);
+
+Route::get('/datas', [DataController::class, 'index']);
+
+Route::get('/datas/{param}', [DataController::class, 'show']);
+
+// Update
+Route::post('/datas', [DataController::class, 'store']);
+
+// Fungsinya untuk mengedit data
+Route::patch('/datas/{key}', [DataController::class, 'update']);
+
+// Untuk delete data
+Route::delete('/datas/{key}', [DataController::class, 'destroy']);

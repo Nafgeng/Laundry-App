@@ -19,7 +19,6 @@
 
 </head>
 <body>
-
     <!-- Navbar -->
     <div class="navbar">
         <ul class="navbar-list">
@@ -29,19 +28,19 @@
             </li>
             <div class="navbar-navigate">
                 <li class="navbar-item">
-                    <a href="#scroll_benefit" class="navbar-link">Home</a>
+                    <a href="#scroll-home" class="navbar-link">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#scroll_whyus" class="navbar-link">About</a>
+                    <a href="#scroll-about" class="navbar-link">About</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#scroll_aboutus" class="navbar-link">Why Us?</a>
+                    <a href="#scroll-whyus" class="navbar-link">Why Us?</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#scroll_aboutus" class="navbar-link">Jenis Laundry</a>
+                    <a href="#scroll-jenis" class="navbar-link">Jenis Laundry</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#scroll_aboutus" class="navbar-link">Contact</a>
+                    <a href="#scroll-contact" class="navbar-link">Contact</a>
                 </li>
             </div>
             <div class="navbar-button">
@@ -61,12 +60,14 @@
                         <p class="header_text">
                             Hemat waktu dan tenaga dengan layanan cuci dan setrika yang handal.
                         </p>
-                    <a href="#scroll_benefit" class="btn_start">Ingin melihat laundry anda?</a>
+                    <a href="#scroll_about" class="btn_start">Ingin melihat laundry anda?</a>
                 </div>
             </div>
         </header>
         <!-- End Of Header -->
 
+        {{-- Scroll Target --}}
+        <div id="scroll-about"></div>
         <!-- About -->
         <main>
             <div class="about">
@@ -89,6 +90,8 @@
         </main>
         <!-- End Of About -->
 
+        {{-- Scroll Target --}}
+        <div id="scroll-whyus"></div>
         <!-- Why Us -->
         <div class="title_whyus">
             <h2>Mengapa Kami</h2>
@@ -130,6 +133,8 @@
         </div>
         <!-- End Of Why Us -->
 
+        {{-- Scroll Target --}}
+        <div id="scroll-jenis"></div>
         <!-- Liat Jenis Paket Laundry -->
         <div class="title_jenis">
             <h3>List Jenis</h3>
@@ -163,6 +168,8 @@
             </div>
         <!-- End Of Liat Jenis Paket Laundry -->
 
+        {{-- Scroll Target --}}
+        <div id="scroll-contact"></div>
         <!-- Contact Us -->
         <main>
             <div class="contact_title">

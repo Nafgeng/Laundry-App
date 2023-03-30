@@ -100,7 +100,7 @@ header{
 }
 
 .bg_image{
-    background: linear-gradient(90.12deg, #3F2082 28.65%, rgba(108, 74, 182, 0) 99.92%), url(./img/headerimg.jpg);
+    background: linear-gradient(90.12deg, #3F2082 28.65%, rgba(108, 74, 182, 0) 99.92%), url(../img/headerimg.jpg);
     height: 100%;
     width: 100%;
     background-position: center;
@@ -281,7 +281,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
-    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(./img/list1.jpg);
+    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(../img/list1.jpg);
     background-size: cover;
 }
 
@@ -292,7 +292,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
-    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(./img/list2.jpg);
+    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(../img/list2.jpg);
     background-size: cover;
 }
 
@@ -303,7 +303,7 @@ main {
     flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
-    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(./img/list3.jpg);
+    background: linear-gradient(0deg, rgba(68, 32, 147, 0.75) 100%, rgba(108, 74, 182, 0) 100.100%), url(../img/list3.jpg);
     background-size: cover;
 }
 /* --------------------- End Of Jenis Laundry --------------------- */

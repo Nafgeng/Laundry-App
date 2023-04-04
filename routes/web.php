@@ -14,7 +14,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+//Menampilkan View
 Route::get('/', [HomeController::class, 'home']);
+Route::get('/user_data_laundry', [HomeController::class, 'user_data_laundry']);
 
 Route::get('/datas', [DataController::class, 'index']);
 

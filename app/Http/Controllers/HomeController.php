@@ -11,4 +11,9 @@ class HomeController extends Controller
     {
         return view('layouts.landing-page');
     }
+
+    public function user_data_laundry()
+    {
+        return view('layouts.user_data-laundry');
+    }
 }

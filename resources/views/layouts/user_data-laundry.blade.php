@@ -90,7 +90,7 @@
 
                                     <div class="card-container">
                                         <div class="card-container__left">
-                                            <img src="image/laundry.png" alt="">
+                                            <img src="img/laundry.png" alt="">
                                             <div class="card-container__left-text">
                                                 <div class="text-header">
                                                     <h2>John Doe</h2>
@@ -115,7 +115,7 @@
 
                                     <div class="card-container">
                                         <div class="card-container__left">
-                                            <img src="image/laundry.png" alt="">
+                                            <img src="img/laundry.png" alt="">
                                             <div class="card-container__left-text">
                                                 <div class="text-header">
                                                     <h2>John Doe</h2>

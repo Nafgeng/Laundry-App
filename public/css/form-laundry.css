@@ -102,12 +102,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width:1024px) {
     main{
         width: auto;
     }
+}
 
+@media screen and (max-width: 480px) {
     .header-text{
         font-size: 15px;
     }

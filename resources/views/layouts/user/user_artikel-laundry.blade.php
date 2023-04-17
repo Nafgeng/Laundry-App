@@ -121,7 +121,7 @@
         </div>
     </div>
     <!-- custom js     -->
-    <script src="js/script.js"></script>
+    <script src="js/script_user-artikel-laundry.js"></script>
 
 </body>
 </html>

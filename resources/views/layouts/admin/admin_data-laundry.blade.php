@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href=css/admin_data-laundry.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c6a35e66f0.js" crossorigin="anonymous"></script>
+
+    <title>Admin - Data Laundry</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list__item">
+                    <div class="active-sidebar-list__item-button on">
+                        <i class="fa-solid fa-file"></i>
+                        <p>Data Laundry</p>
+                    </div>
+                </li>
+                <li class="sidebar-list__item">
+                    <div class="sidebar-list__item-button">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                        <p>Tambah Data</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <header>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="header-right">
+                    <div class="header-right__text">
+                        <p>Admin Account</p>
+                        <p>Log Out</p>
+                    </div>
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </header>
+
+            <div class="main-title">
+                <h1>Halo Admin 👋</h1>
+                <h3>Jangan lupa untuk terus meng-update data laundry yang lainnya ya !!</h3>
+            </div>
+
+            <div class="grid-card">
+                <div class="grid-card__item" style="background-color: #6C4AB6;">
+                    <img src="image/icon-1.png" alt="">
+                    <div class="grid-card__item-text">
+                        <h1 style="color: #fff;">300</h1>
+                        <h4 style="color: #fff;">Total Data Laundry</h4>
+                    </div>
+                </div>
+                <div class="grid-card__item" style="background-color: #fff;">
+                    <img src="image/icon-2.png" alt="">
+                    <div class="grid-card__item-text">
+                        <h1>300</h1>
+                        <h4>Laundry Siap Diambil</h4>
+                    </div>
+                </div>
+                <div class="grid-card__item" style="background-color: #fff;">
+                    <img src="image/icon-3.png" alt="">
+                    <div class="grid-card__item-text">
+                        <h1>300</h1>
+                        <h4>Laundry Dalam Proses</h4>
+                    </div>
+                </div>
+                <div class="grid-card__item" style="background-color: #fff;">
+                    <img src="image/icon-4.png" alt="">
+                    <div class="grid-card__item-text">
+                        <h1>300</h1>
+                        <h4>Laundry Sudah Diambil</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table">
+                <div class="table-header">
+                    <div class="table-header__text">
+                        <h2>Data Laundry</h2>
+                        <h4>Tetap dipantau terus ya perkembangan tiap data laundry</h4>
+                    </div>
+                    <div style="display: flex;
+                                align-items: center;">
+                        <button href="#" class="table-header__button">
+                            <i class="fa-solid fa-file-export"></i>
+                            <h4>Export</h4>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-parent">
+                    <table class="table-body sticky">
+                            <thead>
+                                <tr class="table-row__head">
+                                    <th class="th-no">No.</th>
+                                    <th class="th-nama">Nama</th>
+                                    <th class="th-tannggal">Tanggal</th>
+                                    <th class="th-jenis">Jenis Laundry</th>
+                                    <th class="th-type">Type Laundry</th>
+                                    <th class="th-status">Status Laundry</th>
+                                    <th class="th-photo">Photo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                                <tr class="table-row__body">
+                                    <td>1</td>
+                                    <td>Joh Doe</td>
+                                    <td>Fri 27 January 2023</td>
+                                    <td>Express 8 Jam</td>
+                                    <td>Satuan</td>
+                                    <td><div class="status-button">
+                                        SIAP DIAMBIL
+                                    </div></td>
+                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                        <i class="fa-sharp fa-solid fa-eye"></i>
+                                    </div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="js/script_admin-data-laundry.js"></script>
+
+</body>
+</html>

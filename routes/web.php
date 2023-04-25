@@ -17,6 +17,9 @@ use App\Http\Controllers\HomeController;
 //Menampilkan View
 Route::get('/', [HomeController::class, 'home']);
 
+//view login
+Route::get('/login', [HomeController::class, 'login']);
+
 //view form
 Route::get('/form_laundry', [HomeController::class, 'form_laundry']);
 

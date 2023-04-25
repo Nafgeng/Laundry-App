@@ -43,9 +43,11 @@
                     <a href="#scroll-contact" class="navbar-link">Contact</a>
                 </li>
             </div>
-            <div class="navbar-button">
-                ingin melihat laundry anda?
-            </div>
+            <a href="{{url('/login')}}">
+                <div class="navbar-button">
+                    ingin melihat laundry anda?
+                </div>
+            </a>
         </ul>
     </div>
         <!-- End of Navbar -->
@@ -60,7 +62,7 @@
                         <p class="header_text">
                             Hemat waktu dan tenaga dengan layanan cuci dan setrika yang handal.
                         </p>
-                    <a href="#scroll_about" class="btn_start">Ingin melihat laundry anda?</a>
+                    <a href="{{url('/login')}}" class="btn_start">Ingin melihat laundry anda?</a>
                 </div>
             </div>
         </header>

@@ -21,20 +21,24 @@
         <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="sidebar-logo">
-                <img src="image/logo.png" alt="">
+                <img src="img/logo.png" alt="">
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                    <div class="active-sidebar-list__item-button">
-                        <i class="fa-solid fa-file"></i>
-                        <p>Data Laundry</p>
-                    </div>
+                    <a href="{{url('/user_data_laundry')}}">
+                        <div class="sidebar-list__item-button">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Data Laundry</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="sidebar-list__item">
-                    <div class="sidebar-list__item-button">
-                        <i class="fa-solid fa-book-open"></i>
-                        <p>Artikel</p>
-                    </div>
+                    <a href="{{url('/user_artikel_laundry')}}">
+                        <div class="active-sidebar-list__item-button">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p>Artikel</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -61,7 +65,7 @@
             </div>
 
             <div class="artikel">
-                <img src="img1.jpg" alt="artikel image">
+                <img src="img/img1.jpg" alt="artikel image">
                 <div class="artikel-item">
                     <div class="artikel-title">
                         <h1>5 Alasan Orang Pilih Jasa Laundry Ketimbang Nyuci Sendiri.</h1>

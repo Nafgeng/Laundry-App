@@ -24,16 +24,20 @@
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                    <div class="sidebar-list__item-button">
-                        <i class="fa-solid fa-file"></i>
-                        <p>Data Laundry</p>
-                    </div>
+                    <a href="{{url('/admin_data_laundry')}}">
+                        <div class="sidebar-list__item-button">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Data Laundry</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="sidebar-list__item">
-                    <div class="active-sidebar-list__item-button">
-                        <i class="fa-solid fa-file-circle-plus"></i>
-                        <p>Tambah Data</p>
-                    </div>
+                    <a href="{{url('/admin_tambah_laundry')}}">
+                        <div class="active-sidebar-list__item-button">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            <p>Tambah Data</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -62,10 +66,12 @@
                         </div>
                         <div style="display: flex;
                                     align-items: center;">
-                            <button href="#" class="table-header__button">
-                                <i class="fa-solid fa-file-circle-plus"></i>
-                                <h4>Tambah Data</h4>
-                            </button>
+                                    <a href="{{url('/form_laundry')}}">
+                                        <button class="table-header__button">
+                                            <i class="fa-solid fa-file-circle-plus"></i>
+                                            <h4>Tambah Data</h4>
+                                        </button>
+                                    </a>
                         </div>
                     </div>
 

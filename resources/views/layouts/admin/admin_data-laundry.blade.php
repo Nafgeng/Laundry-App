@@ -24,16 +24,20 @@
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-list__item">
-                    <div class="active-sidebar-list__item-button on">
-                        <i class="fa-solid fa-file"></i>
-                        <p>Data Laundry</p>
-                    </div>
+                    <a href="{{url('/admin_data_laundry')}}">
+                        <div class="active-sidebar-list__item-button on">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Data Laundry</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="sidebar-list__item">
-                    <div class="sidebar-list__item-button">
-                        <i class="fa-solid fa-file-circle-plus"></i>
-                        <p>Tambah Data</p>
-                    </div>
+                    <a href="{{url('/admin_tambah_laundry')}}">
+                        <div class="sidebar-list__item-button">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            <p>Tambah Data</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -60,28 +64,28 @@
 
             <div class="grid-card">
                 <div class="grid-card__item" style="background-color: #6C4AB6;">
-                    <img src="image/icon-1.png" alt="">
+                    <img src="img/icon-1.png" alt="">
                     <div class="grid-card__item-text">
                         <h1 style="color: #fff;">300</h1>
                         <h4 style="color: #fff;">Total Data Laundry</h4>
                     </div>
                 </div>
                 <div class="grid-card__item" style="background-color: #fff;">
-                    <img src="image/icon-2.png" alt="">
+                    <img src="img/icon-2.png" alt="">
                     <div class="grid-card__item-text">
                         <h1>300</h1>
                         <h4>Laundry Siap Diambil</h4>
                     </div>
                 </div>
                 <div class="grid-card__item" style="background-color: #fff;">
-                    <img src="image/icon-3.png" alt="">
+                    <img src="img/icon-3.png" alt="">
                     <div class="grid-card__item-text">
                         <h1>300</h1>
                         <h4>Laundry Dalam Proses</h4>
                     </div>
                 </div>
                 <div class="grid-card__item" style="background-color: #fff;">
-                    <img src="image/icon-4.png" alt="">
+                    <img src="img/icon-4.png" alt="">
                     <div class="grid-card__item-text">
                         <h1>300</h1>
                         <h4>Laundry Sudah Diambil</h4>

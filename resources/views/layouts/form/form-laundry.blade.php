@@ -19,10 +19,12 @@
 
 <body>
     <main>
-        <div class="navigation-back">
-            <i class="fa-solid fa-chevron-left" style="color: #432c7a;"></i>
-            <p>Kembali Ke Halaman Admin</p>
-        </div>
+        <a href="{{url('/admin_tambah_laundry')}}">
+            <div class="navigation-back">
+                <i class="fa-solid fa-chevron-left" style="color: #432c7a;"></i>
+                <p>Kembali Ke Halaman Admin</p>
+            </div>
+        </a>
 
         <div class="header-text">
             <h1>Form Pengisian Data laundry</h1>

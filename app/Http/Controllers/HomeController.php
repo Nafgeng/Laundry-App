@@ -12,6 +12,12 @@ class HomeController extends Controller
         return view('layouts.landing-page');
     }
 
+    //login view
+    public function login()
+    {
+        return view('layouts.login');
+    }
+
     //form view
     public function form_laundry()
     {

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CheckRoleController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\HomeController;
@@ -17,20 +19,19 @@ use App\Http\Controllers\HomeController;
 //Menampilkan View
 Route::get('/', [HomeController::class, 'home']);
 
-//view login
-// Route::get('/login', [HomeController::class, 'login']);
+//Untuk Mengecheck Role
+Route::get('redirects', [CheckRoleController::class, 'index']);
 
 //view form
-Route::get('/form_laundry', [HomeController::class, 'form_laundry']);
+Route::get('/form_laundry', [AdminController::class, 'form_laundry']);
+
+//view admin
+Route::get('/admin_data_laundry', [AdminController::class, 'admin_data_laundry']);
+Route::get('/admin_tambah_laundry', [AdminController::class, 'admin_tambah_laundry']);
 
 //view user
 Route::get('/user_data_laundry', [HomeController::class, 'user_data_laundry']);
 Route::get('/user_artikel_laundry', [HomeController::class, 'user_artikel_laundry']);
-
-//view admin
-Route::get('/admin_data_laundry', [HomeController::class, 'admin_data_laundry']);
-Route::get('/admin_tambah_laundry', [HomeController::class, 'admin_tambah_laundry']);
-
 
 
 

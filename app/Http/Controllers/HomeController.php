@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function home()
     {
         return view('layouts.landing-page');
@@ -18,12 +23,6 @@ class HomeController extends Controller
         return view('layouts.login');
     }
 
-    //form view
-    public function form_laundry()
-    {
-        return view('layouts.form.form-laundry');
-    }
-
     //user view
     public function user_data_laundry()
     {
@@ -33,17 +32,6 @@ class HomeController extends Controller
     public function user_artikel_laundry()
     {
         return view('layouts.user.user_artikel-laundry');
-    }
-
-    //admin view
-    public function admin_data_laundry()
-    {
-        return view('layouts.admin.admin_data-laundry');
-    }
-
-    public function admin_tambah_laundry()
-    {
-        return view('layouts.admin.admin_tambah-laundry');
     }
 
 }

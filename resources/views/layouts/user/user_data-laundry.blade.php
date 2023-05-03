@@ -30,10 +30,24 @@
                     </div>
 
                     <div class="header-right">
-                        <div class="header-right__text">
+                        @if (Route::has('login'))
+                            @auth
+                            <div class="header-right__text">
+                                <p>User Account</p>
+                                <p href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout').submit();">Log Out</p>
+                            </div>
+
+                            <form action="{{ route('logout') }}" id="logout" method="POST">@csrf</form>
+                            @else
+                            <div class="header-right__text">
+                                <p href="{{ route('login') }}">Log In</p>
+                            </div>
+                            @endauth
+                        @endif
+                        {{-- <div class="header-right__text">
                             <p>User Account</p>
                             <p>Log Out</p>
-                        </div>
+                        </div> --}}
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
 

@@ -112,22 +112,22 @@
                     <table class="table-body sticky">
                             <thead>
                                 <tr class="table-row__head">
-                                    <th class="th-no">No.</th>
+                                    {{-- <th class="th-no">No.</th> --}}
                                     <th class="th-nama">Nama</th>
-                                    <th class="th-tannggal">Tanggal</th>
-                                    <th class="th-jenis">Jenis Laundry</th>
-                                    <th class="th-type">Type Laundry</th>
+                                    {{-- <th class="th-tannggal">Tanggal</th> --}}
+                                    {{-- <th class="th-jenis">Jenis Laundry</th> --}}
+                                    {{-- <th class="th-type">Type Laundry</th> --}}
                                     <th class="th-status">Status Laundry</th>
                                     <th class="th-photo">Photo</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -136,11 +136,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -149,11 +149,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -162,11 +162,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -175,11 +175,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -188,11 +188,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -201,11 +201,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -214,11 +214,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -227,11 +227,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -240,11 +240,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>
@@ -253,11 +253,11 @@
                                     </div></td>
                                 </tr>
                                 <tr class="table-row__body">
-                                    <td>1</td>
+                                    {{-- <td>1</td> --}}
                                     <td>Joh Doe</td>
-                                    <td>Fri 27 January 2023</td>
-                                    <td>Express 8 Jam</td>
-                                    <td>Satuan</td>
+                                    {{-- <td>Fri 27 January 2023</td> --}}
+                                    {{-- <td>Express 8 Jam</td> --}}
+                                    {{-- <td>Satuan</td> --}}
                                     <td><div class="status-button">
                                         SIAP DIAMBIL
                                     </div></td>

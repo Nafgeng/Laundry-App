@@ -12,7 +12,7 @@
 
     <script src="https://kit.fontawesome.com/c6a35e66f0.js" crossorigin="anonymous"></script>
 
-    <title>Login - Dewi Laundry</title>
+    <title>Register - Dewi Laundry</title>
 
 </head>
 <body>
@@ -36,13 +36,18 @@
                 </div>
 
                 <div class="guide-login">
-                    <h2>Login</h2>
-                    <p>email : <strong>user</strong></p>
-                    <p>password : <strong>1234</strong></p>
+                    <h2>Register</h2>
+                    {{-- <p>email : <strong>user</strong></p>
+                    <p>password : <strong>1234</strong></p> --}}
                 </div>
 
-                <form action="{{route('login')}}" method="POST">
+                <form action="{{route('register')}}" method="POST">
                     @csrf
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input name="name" type="text" placeholder="name">
+                        </div>
+
                         <div class="input-field">
                             <i class="fa-solid fa-user"></i>
                             <input name="email" type="email" placeholder="email">
@@ -53,7 +58,12 @@
                             <input name="password" type="password" placeholder="password">
                         </div>
 
-                    <button type="submit">Log In</button>
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input name="password_confirmation" type="password" placeholder="password confirmation">
+                        </div>
+
+                    <button type="submit">Register</button>
 
                 </form>
 

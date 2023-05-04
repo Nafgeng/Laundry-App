@@ -343,6 +343,10 @@ td {
         font-size: 14px;
     }
 
+    .th-no, .th-tannggal, .th-jenis, .th-type, .missing {
+        display: none;
+    }
+
 }
 
 @media (max-width: 375px) {

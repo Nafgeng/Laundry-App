@@ -8,13 +8,18 @@ use Illuminate\Support\Facades\Auth;
 
 class CheckRoleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index() {
         $role = Auth::user()->role;
 
         if ($role == 'admin') {
-            return view('layouts.admin.admin_data-laundry');
+            return redirect()->action([AdminController::class, 'admin_data_laundry']);
         } else {
-            return view('layouts.user.user_data-laundry');
+            return redirect()->action([HomeController::class, 'user_data_laundry']);
         }
 
     }

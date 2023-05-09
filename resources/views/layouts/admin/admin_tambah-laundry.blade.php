@@ -52,7 +52,7 @@
                     @if (Route::has('login'))
                             @auth
                             <div class="header-right__text">
-                                <p>User Account</p>
+                                <p>Admin Account</p>
                                 <p href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout').submit();">Log Out</p>
                             </div>
 
@@ -63,6 +63,7 @@
                             </div>
                             @endauth
                         @endif
+                        <i class="fa-solid fa-circle-user"></i>
                 </div>
             </header>
 

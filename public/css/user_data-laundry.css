@@ -143,6 +143,7 @@ header {
 .header-right p:last-child {
     color: var(--danger-color);
     font-size: 12px;
+    cursor: pointer;
 }
 
 .header-right i {

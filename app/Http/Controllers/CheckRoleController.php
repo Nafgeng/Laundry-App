@@ -16,7 +16,7 @@ class CheckRoleController extends Controller
         if ($role == 'admin') {
             return redirect()->action([AdminController::class, 'admin_data_laundry']);
         } else {
-            return redirect()->action([HomeController::class, 'user_data_laundry']);
+            return redirect()->action([UserController::class, 'user_data_laundry']);
         }
     }
 }

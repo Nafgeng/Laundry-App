@@ -64,7 +64,7 @@
                             </div>
                             @endauth
                         @endif
-
+                        <i class="fa-solid fa-circle-user"></i>
             </header>
 
             <div class="main-title">

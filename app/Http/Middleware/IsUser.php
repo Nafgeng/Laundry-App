@@ -19,7 +19,7 @@ class IsUser
         $user = Auth::user();
 
         if (!$user->role || $user->role != 'user') {
-            return redirect('/');
+            abort(403, 'Unauthorized');
         }
 
         return $next($request);

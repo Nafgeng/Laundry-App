@@ -17,4 +17,9 @@ class DefaultController extends Controller
     {
         return view('layouts.login');
     }
+
+    public function register()
+    {
+        return view('layouts.register');
+    }
 }

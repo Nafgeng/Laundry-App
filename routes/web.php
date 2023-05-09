@@ -23,8 +23,6 @@ Route::get('/', [DefaultController::class, 'home']);
 //Untuk Mengecheck Role
 Route::get('redirects', [CheckRoleController::class, 'check_role']);
 
-Route::get('/register', [DefaultController::class, 'register']);
-
 //view form
 Route::get('/form_laundry', [AdminController::class, 'form_laundry']);
 

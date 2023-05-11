@@ -37,4 +37,3 @@ Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundr
 
 
 
-aaaa;

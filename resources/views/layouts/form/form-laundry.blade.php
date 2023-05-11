@@ -62,7 +62,7 @@
                 <input type="file" id="upload" accept=".jpg,.jpeg,.png" >
             </div>
 
-            <button class="btn-submit">SUBMIT</button>
+            <button class="btn-submit" type="submit">SUBMIT</button>
 
             </form>
         </div>

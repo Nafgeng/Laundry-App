@@ -68,7 +68,7 @@
         </div>
     </main>
 
-    <script src="js/script_form-laundry"></script>
+    <script src="js/form.js"></script>
 
 </body>
 </html>

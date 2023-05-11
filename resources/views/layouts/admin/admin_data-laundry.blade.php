@@ -132,149 +132,22 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($laundry as $l)
                                 <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
+                                    <td class="missing">{{ $l->id }}</td>
+                                    <td>{{ $l->name }}</td>
+                                    <td class="missing">{{ \Carbon\Carbon::parse($l->tanggal)->format('d-M-Y') }}</td>
+                                    <td class="missing">{{ $l->jenislaundry }}</td>
+                                    <td class="missing">{{ $l->typelaundry }}</td>
                                     <td><div class="status-button">
-                                        SIAP DIAMBIL
+                                        {{ $l->statuslaundry }}
                                     </div></td>
                                     <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
                                         <i class="fa-sharp fa-solid fa-eye"></i>
                                     </div></td>
                                 </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                <tr class="table-row__body">
-                                    <td class="missing">1</td>
-                                    <td>Joh Doe</td>
-                                    <td class="missing">Fri 27 January 2023</td>
-                                    <td class="missing">Express 8 Jam</td>
-                                    <td class="missing">Satuan</td>
-                                    <td><div class="status-button">
-                                        SIAP DIAMBIL
-                                    </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
+                                @endforeach
+                                
                             </tbody>
                         </table>
                 </div>

@@ -25,6 +25,7 @@ Route::get('redirects', [CheckRoleController::class, 'check_role']);
 
 //view form
 Route::get('/form_laundry', [AdminController::class, 'form_laundry']);
+Route::post('/add-laundry', [AdminController::class, 'store']); //route tambah data
 
 //view admin
 Route::get('/admin_data_laundry', [AdminController::class, 'admin_data_laundry']);
@@ -36,15 +37,3 @@ Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundr
 
 
 
-Route::get('/datas', [DataController::class, 'index']);
-
-Route::get('/datas/{param}', [DataController::class, 'show']);
-
-// Update
-Route::post('/datas', [DataController::class, 'store']);
-
-// Fungsinya untuk mengedit data
-Route::patch('/datas/{key}', [DataController::class, 'update']);
-
-// Untuk delete data
-Route::delete('/datas/{key}', [DataController::class, 'destroy']);

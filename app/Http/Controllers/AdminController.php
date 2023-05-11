@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
+use App\Models\Laundry;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -17,12 +19,15 @@ class AdminController extends Controller
     //ADMIN VIEW
     public function admin_data_laundry()
     {
-        return view('layouts.admin.admin_data-laundry');
+        $laundry = Laundry::all();
+        return view('layouts.admin.admin_data-laundry', compact('laundry'));
     }
 
     public function admin_tambah_laundry()
     {
-        return view('layouts.admin.admin_tambah-laundry');
+        
+        $laundry = Laundry::all();
+        return view('layouts.admin.admin_tambah-laundry', compact('laundry'));
     }
 
     //FORM VIEW
@@ -31,42 +36,40 @@ class AdminController extends Controller
         return view('layouts.form.form-laundry');
     }
 
-    //DATA
-    private $datalist = [
-        'nama' => 'dzikry',
-        'alamat' => 'abu-bau',
-        'status' => 'pelajar'
-    ];
+    
 
-    public function index ()
+    public function store(Request $request)
     {
-        if (request()->search) {
-            return $this->datalist[request()->search];
-        }
-        return $this->datalist;
+        $laundry = new Laundry();
+        $laundry->name = $request->name;
+        $laundry->tanggal = date('Y-m-d', strtotime($request->tanggal));
+        $laundry->jenislaundry = $request->jenislaundry;
+        $laundry->typelaundry = $request->typelaundry;
+        $laundry->statuslaundry = $request->statuslaundry;
+
+        if ($request->hasFile('image')) {
+        $imagePath = $request->file('image')->store('laundry');
+        $laundry->image = $imagePath;
     }
 
-    public function store()
-    {
-        $this->datalist[request()->label] = request()->datas;
-        return $this->datalist;
+        $laundry->save();
+
+        return redirect('/admin_tambah_laundry');
     }
 
-    public function show($param)
-    {
-        return $this->datalist[$param];
-    }
+    // public function show($param)
+    // {
+        
+    // }
 
-    public function update($key)
-    {
-        $this->datalist[$key] = request()->data;
-        return $this->datalist;
-    }
+    // public function update($key)
+    // {
+        
+    // }
 
-    public function destroy($key)
-    {
-        unset($this->datalist[$key]);
-        return $this->datalist;
-    }
+    // public function destroy($key)
+    // {
+        
+    // }
 
 }

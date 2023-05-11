@@ -34,12 +34,3 @@ Route::get('/admin_tambah_laundry', [AdminController::class, 'admin_tambah_laund
 //view user
 Route::get('/user_data_laundry', [UserController::class, 'user_data_laundry']);
 Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundry']);
-<<<<<<< HEAD
-=======
-
-
-
-<<<<<<< Updated upstream
-=======
->>>>>>> 632a415382456c5c912bc87148d5e8add984e583
->>>>>>> Stashed changes

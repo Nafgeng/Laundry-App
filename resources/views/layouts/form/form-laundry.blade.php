@@ -69,7 +69,7 @@
         </div>
     </main>
 
-    <script src="js/script_form-laundry"></script>
+    <script src="js/script_form-laundry.js"></script>
 
 </body>
 </html>

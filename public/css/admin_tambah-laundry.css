@@ -141,7 +141,6 @@ header {
 .header-right p:last-child {
     color: var(--danger-color);
     font-size: 12px;
-    cursor: pointer;
 }
 
 .header-right i {
@@ -155,16 +154,6 @@ header {
 .table-body.sticky th {
     position: sticky;
     top: 0;
-    background-color: #fff;
-}
-
-.table-body.sticky th::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: #fff;
 }
 
@@ -193,123 +182,118 @@ header {
     border-radius: 10px;
 }
 
-.action-button {
-    display: grid;
-    grid-template-columns: 60% auto;
-    gap: 1.5rem;
-    margin-top: 48px;
+.main-content__list {
+    overflow-y: scroll;
+    height: 565px;
 }
 
-.action-button__crud {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
-}
-
-.action-button__search {
+.main-content__item {
     display: flex;
-    width: auto;
-    background-color: #fff;
-    padding: 1.5rem 0 1.5rem 1.5rem;
     gap: 1rem;
-    border-radius: 50px;
+    margin-top: 2rem;
 }
 
-.action-button__edit,
-.action-button__delete {
+.main-content__action {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 1rem;
     gap: 1rem;
+    border-radius: 15px;
     background-color: #fff;
-    color: var(--primary-color);
-    border-radius: 50px;
 }
 
-.table-body {
-    color: var(--text-color-primary);
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 1rem 1.5rem;
-    width: 100%;
-    overflow: auto;
-}
-
-.table-row__head th{
-    border-bottom: 2px solid #EEEEEE;
-}
-
-.table-body th,
-.table-body td {
-    padding: 1rem 1.5rem;
-}
-
-.table-parent {
-    overflow-x: auto;
-    overflow-y: auto;
-    height: 60vh;
-    border-radius: 20px;
-}
-
-td {
-    font-weight: 500;
-    text-align: center;
-}
-
-.status-button {
-    font-size: 12px;
+.action__see,
+.action__edit,
+.action__delete {
+    padding: 1.5rem;
     color: #fff;
-    border-radius: 50px;
-    padding: 0.5rem 1rem;
-    background-color: var(--success-color);
-}
-
-.eye-button {
-    color: #fff;
-    padding: 10px;
     border-radius: 8px;
+}
+
+.action__see {
     background-color: var(--primary-color);
 }
 
-.checkbox-input-head,
-.checkbox-input {
-    z-index: 1;
-    appearance: none;
-    background-color: white;
-    border: 2.5px solid rgba(3, 12, 36, 0.2);
-    border-radius: 2px;
-    width: 20px;
-    height: 20px;
+.action__edit {
+    background-color: var(--warning-color);
 }
 
-.checkbox-input {
-    cursor: pointer;
+.action__delete {
+    background-color: var(--danger-color);
 }
 
-.checkbox-input:checked::after {
-    content: '\2713';
-    font-size: 16px;
+.main-content__card:first-child {
+    margin-top: 0;
+}
+
+.main-content__card {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.card-number {
+    margin-right: 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-container__left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-container__left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-container__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.card-container__right-status {
+    padding: 1rem;
+    background-color: var(--success-color);
+    font-size: 10px;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
 }
 
-.checkbox-input:checked {
+.card-container__right-status-proses {
+    padding: 1rem;
+    background-color: var(--warning-color);
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
+}
+
+.card-container__right-status-diambil {
+    padding: 1rem;
     background-color: var(--primary-color);
-}
-
-.disable {
-    color: #949da9;
-    cursor: no-drop;
-}
-
-.table-header__button,
-.action-button__delete,
-.action-button__edit,
-.eye-button {
-    cursor: pointer;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -339,26 +323,11 @@ td {
         margin-top: 8px;
     }
 
-    .table-parent {
-        height: 55vh;
-    }
-
 }
 
 @media (max-width: 425px) {
     .table-header {
         display: block;
-    }
-
-    .action-button {
-        display: block;
-    }
-
-    .action-button__crud {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 50px;
-        margin-top: 1rem;
     }
 
     .table-header__text h1 {
@@ -373,12 +342,84 @@ td {
         margin-top: 1rem;
     }
 
-    .table-parent {
-        border-radius: 10px;
+    .main-content__item {
+        display: block;
     }
 
-    th,td {
-        font-size: 14px;
+    .main-content__list {
+        gap: 2rem;
+    }
+
+    .main-content__card {
+        width: 100%;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .main-content__tab-header {
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    .main-content__tab-header > button {
+        padding: 0.5rem;
+        font-size: 8px;
+    }
+
+    .card-container img {
+        width: 35px;
+        height: auto;
+    }
+
+    .card-number {
+        font-size: 16px;
+    }
+
+    .text-header {
+        margin-bottom: 8px;
+    }
+
+    .text-header h2 {
+        font-size: 18px;
+    }
+
+    .text-header h5 {
+        font-size: 10px;
+    }
+
+    .card-container__left-text h5{
+        font-size: 10px;
+    }
+
+    .card-container__right h3 {
+        font-size: 16px;
+    }
+
+    .card-container__right-status {
+        padding: 0.5rem;
+        font-size: 8px;
+    }
+
+    .card-container__right-status-proses {
+        padding: 0.5rem;
+        font-size: 8px;
+    }
+
+    .card-container__right-status-diambil {
+        padding: 0.5rem;
+        font-size: 8px;
+    }
+
+    .main-content__action {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .action__see,
+    .action__delete,
+    .action__edit {
+        font-size: 12px;
+        padding: 1rem;
     }
 
 }
@@ -394,10 +435,6 @@ td {
     }
 
     .table-header__text h3 {
-        font-size: 12px;
-    }
-
-    .action-button__edit, .action-button__delete {
         font-size: 12px;
     }
 

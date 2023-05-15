@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,66 +83,48 @@
                                     </a>
                         </div>
                     </div>
+                </div>
+                <div class="main-content__list">
+                    <div class="main-content__item">
+                        <div class="main-content__card">
+                            <h2 class="card-number">1</h2>
 
-                    <div class="action-button">
-                        <div class="action-button__search">
-                            <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
-                            <input type="text" placeholder="search" style="width: 50%;">
-                        </div>
-                        <div class="action-button__crud">
-                            <div class="action-button__edit" id="action-button__edit">
-                                <i class="fa-solid fa-pen"></i>
-                                <h4>Edit</h4>
+                            <div class="card-container">
+                                <div class="card-container__left">
+                                    <img src="image/laundry.png" alt="">
+                                    <div class="card-container__left-text">
+                                        <div class="text-header">
+                                            <h2>John Doe</h2>
+                                            <h5>Fri, 27 Jan 2023</h5>
+                                        </div>
+                                        <h5>Type : Express 8 Jam</h5>
+                                    </div>
+                                </div>
+                                <div class="card-container__right">
+                                    <div class="card-container__right-status">
+                                        SIAP DIAMBIL
+                                    </div>
+                                    <h3>3 Kg</h3>
+                                </div>
                             </div>
-                            <div class="action-button__delete">
+                        </div>
+                        <div class="main-content__action">
+                            <div class="action__see" onclick="window.open('image/contoh.jpg', '_blank')" title="Lihat Foto">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <div class="action__edit" title="Edit Data">
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                            <div class="action__delete" title="Hapus Data">
                                 <i class="fa-solid fa-trash"></i>
-                                <h4>Hapus</h4>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="table-parent">
-                    <table class="table-body sticky">
-                            <thead>
-                                <tr class="table-row__head">
-                                    <th>
-                                        <input type="checkbox" name="myCheckBoxName" id="myCheckBoxId" class="checkbox-input-head">
-                                    </th>
-                                    <th>Nama</th>
-                                    <th>Tanggal</th>
-                                    <th>Jenis Laundry</th>
-                                    <th>Type Laundry</th>
-                                    <th>Status Laundry</th>
-                                    <th>Photo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($laundry as $l)
-                                <tr class="table-row__body">
-                                    <td>
-                                        <input type="checkbox" name="myCheckBoxName" id="myCheckBoxId" class="checkbox-input">
-                                    </td>
-                                    <td>{{ $l->name }}</td>
-                                    <td>{{ \Carbon\Carbon::parse($l->tanggal)->format('d-M-Y') }}</td>
-                                    <td>{{ $l->jenislaundry }}</td>
-                                    <td>{{ $l->typelaundry }}</td>
-                                    <td><div class="status-button">
-                                        {{ $l->statuslaundry }}
-                                    </div></td>
-                                    <td ><div class="eye-button">
-                                        <i class="fa-sharp fa-solid fa-eye"></i>
-                                    </div></td>
-                                </tr>
-                                @endforeach
-
-                            </tbody>
-                        </table>
-                </div>
             </div>
         </div>
 
-        <script src="js/script_admin-tambah-laundry.js"></script>
+        <script src="js/script_admin-tambah-laundry.js.js"></script>
 
 </body>
 </html>

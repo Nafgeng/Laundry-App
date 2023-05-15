@@ -15,24 +15,3 @@ document.onclick = function (e) {
     }
 }
 
-const checkBoxes = document.querySelectorAll('.checkbox-input')
-const dissableButton = document.querySelector('.action-button__edit')
-
-let checcckedCount= 0;
-
-checkBoxes.forEach((checkbooxe) => {
-    checkbooxe.addEventListener('change', () => {
-        if(checkbooxe.checked) {
-            checcckedCount++;
-        } else {
-            checcckedCount--;
-        }
-
-        if (checcckedCount > 1) {
-            dissableButton.classList.add('disable');
-        } else {
-            dissableButton.classList.remove('disable');
-        }
-    });
-});
-

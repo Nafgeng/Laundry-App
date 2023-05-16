@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\DefaultController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ExportExcelController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,3 +41,9 @@ Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundr
 
 // Delete
 Route::delete('/delete/{id}', [AdminController::class, 'destroy']);
+
+// Export to excel
+Route::controller(ExportExcelController::class)->group(function(){
+    Route::get('index', 'index');
+    Route::get('export/excel', 'export')->name('export.excel');
+});

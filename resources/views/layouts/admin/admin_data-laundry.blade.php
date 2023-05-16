@@ -111,10 +111,10 @@
                     </div>
                     <div style="display: flex;
                                 align-items: center;">
-                        <button href="#" class="table-header__button">
+                        <a href="{{ route('export.excel') }}" class="table-header__button">
                             <i class="fa-solid fa-file-export"></i>
                             <h4>Export</h4>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                                     </div></td>
                                 </tr>
                                 @endforeach
-                                
+
                             </tbody>
                         </table>
                 </div>

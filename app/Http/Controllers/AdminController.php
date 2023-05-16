@@ -7,6 +7,8 @@ use App\Models\Laundry;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\ExportLaundries;
 
 class AdminController extends Controller
 {
@@ -31,7 +33,7 @@ class AdminController extends Controller
 
     public function admin_tambah_laundry()
     {
-        
+
         $laundry = Laundry::all();
         return view('layouts.admin.admin_tambah-laundry', compact('laundry'));
     }
@@ -52,7 +54,7 @@ class AdminController extends Controller
     {
         if(empty($request->file('image'))) {
             $laundry = Laundry::find($id);
-    
+
             $laundry->update([
                 'statuslaundry' => $request->statuslaundry,
             ]);
@@ -67,7 +69,7 @@ class AdminController extends Controller
             }
     }
 
-    
+
 
     public function store(Request $request)
     {
@@ -100,6 +102,11 @@ class AdminController extends Controller
 
     return redirect('/admin_tambah_laundry');
 }
+
+public function export()
+    {
+        return Excel::download(new ExportLaundries, 'DataLaundry.xlsx');
+    }
 
 
 }

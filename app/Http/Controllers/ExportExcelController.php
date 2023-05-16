@@ -13,8 +13,5 @@ class ExportExcelController extends Controller
        return view('index');
     }
 
-    public function export()
-    {
-        return Excel::download(new ExportUsers, 'users.xlsx');
-    }
+    
 }

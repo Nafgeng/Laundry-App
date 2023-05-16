@@ -43,7 +43,4 @@ Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundr
 Route::delete('/delete/{id}', [AdminController::class, 'destroy']);
 
 // Export to excel
-Route::controller(ExportExcelController::class)->group(function(){
-    Route::get('index', 'index');
-    Route::get('export/excel', 'export')->name('export.excel');
-});
+Route::get('export/excel',[AdminController::class,'export'] )->name('export.excel');

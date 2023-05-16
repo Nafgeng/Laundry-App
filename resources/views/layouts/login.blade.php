@@ -37,8 +37,8 @@
 
                 <div class="guide-login">
                     <h2>Login</h2>
-                    <p>email : <strong>user</strong></p>
-                    <p>password : <strong>1234</strong></p>
+                    <p>email : <strong>user@gmail.com</strong></p>
+                    <p>password : <strong>12345678</strong></p>
                 </div>
 
                 <form action="{{route('login')}}" method="POST">

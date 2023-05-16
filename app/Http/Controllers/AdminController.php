@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\ExportLaundries;
 use Carbon\Carbon;
 use App\Models\Laundry;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Maatwebsite\Excel\Facades\Excel;
-use App\Exports\ExportLaundries;
 
 class AdminController extends Controller
 {

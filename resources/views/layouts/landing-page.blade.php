@@ -123,7 +123,7 @@
             </div>
             <div class="box">
                 <div class="box-icon">
-                    <i class="fa-solid fa-clock-twelve"></i>
+                    <i class="fa-solid fa-clock"></i>
                 </div>
                 <div class="box-title">
                     <h3>24 / 7</h3>

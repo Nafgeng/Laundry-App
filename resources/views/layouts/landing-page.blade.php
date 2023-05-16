@@ -84,7 +84,7 @@
                         </p>
                     </div>
                     <div class="order_direct">
-                        <a href="">pesan sekarang ></a>
+                        <a href="">Laundry sekarang >></a>
                     </div>
                 </div>
                 <img src="./img/aboutimg.png" class="img_about" alt="about image">

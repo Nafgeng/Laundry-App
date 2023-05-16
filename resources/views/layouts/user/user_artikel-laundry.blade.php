@@ -43,7 +43,7 @@
             </ul>
         </div>
 
-        <div class="main">
+        <main class="main">
             <header>
                 <div class="menu-icon">
                     <i class="fa-solid fa-bars"></i>
@@ -51,20 +51,21 @@
 
                 <div class="header-right">
                     @if (Route::has('login'))
-                            @auth
-                            <div class="header-right__text">
-                                <p>User Account</p>
-                                <p href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout').submit();">Log Out</p>
-                            </div>
+                        @auth
+                        <div class="header-right__text">
+                            <p>User Account</p>
+                            <p href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout').submit();">Log Out</p>
+                        </div>
 
-                            <form action="{{ route('logout') }}" id="logout" method="POST">@csrf</form>
-                            @else
-                            <div class="header-right__text">
-                                <p href="{{ route('login') }}">Log In</p>
-                            </div>
-                            @endauth
-                        @endif
-                        <i class="fa-solid fa-circle-user"></i>
+                        <form action="{{ route('logout') }}" id="logout" method="POST">@csrf</form>
+                        @else
+                        <div class="header-right__text">
+                            <p href="{{ route('login') }}">Log In</p>
+                        </div>
+                        @endauth
+                    @endif
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
             </header>
 
             <div class="main-title">
@@ -72,65 +73,88 @@
                 <h3>Kumpulan Artikel - Artikel Tentang Laundry</h3>
             </div>
 
-            <div class="artikel">
-                <img src="img/img1.jpg" alt="artikel image">
-                <div class="artikel-item">
-                    <div class="artikel-title">
-                        <h1>5 Alasan Orang Pilih Jasa Laundry Ketimbang Nyuci Sendiri.</h1>
+            <div class="article__headline">
+                <img src="img/article-headline-image.png" alt="" class="article__headline-image">
+                <div class="article__headline-content">
+                    <h1>5 Alasan Orang Pilih Jasa Laundry Ketimbang Nyuci Sendiri.</h1>
+                    <h3>Meskipun mencuci pakaian merupakan aktivitas harian, namun beberapa ada yang menitipkan baju kotornya di tempat pencucian atau biasa kita sebut laundry. Kebanyakan dari pengguna jasa laundry menginginkan bajunya rapi dan wangi tanpa harus mencucinya di rumah.</h3>
+                    <div class="article__button-head">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
                     </div>
-                    <div class="artikel-desc">
-                        <p>Meskipun mencuci pakaian merupakan aktivitas harian, namun beberapa ada </p>
-                    </div>
-                    <div class="btn"><i class="fa-solid fa-book-open"></i>
-                    <a href="">Baca Artikel</a></div>
                 </div>
             </div>
 
-            <div class="grid-list">
-                <div class="grid-item">
-                    <img src="list1.jpg" alt="artikel image">
-                    <div class="grid-text">
-                        <div class="grid-title">
-                            <h2>Pengertian Laundry : Tugas,
-                                Struktur Organisasi dan SOP</h2>
-                        </div>
-                        <div class="grid-value">
-                            <p>Laundry (binatu) merupakan salah satu bagian dari department</p>
-                        </div>
+            <div class="article__list">
+                <div class="article__item">
+                    <img src="img/article__item-image.png" alt="" class="article__item-image">
+                    <div class="article__item-text">
+                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
+                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
                     </div>
-                    <div class="btn-grid"><i class="fa-solid fa-book-open"></i>
-                        <a href="">Baca Artikel</a></div>
+                    <div class="article__item-button">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <img src="list2.jpg" alt="artikel image">
-                    <div class="grid-text">
-                        <div class="grid-title">
-                            <h2>Pengertian Laundry : Tugas,
-                                Struktur Organisasi dan SOP</h2>
-                        </div>
-                        <div class="grid-value">
-                            <p>Laundry (binatu) merupakan salah satu bagian dari department</p>
-                        </div>
+                <div class="article__item">
+                    <img src="img/article__item-image.png" alt="" class="article__item-image">
+                    <div class="article__item-text">
+                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
+                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
                     </div>
-                    <div class="btn-grid"><i class="fa-solid fa-book-open"></i>
-                        <a href="">Baca Artikel</a></div>
+                    <div class="article__item-button">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
+                    </div>
                 </div>
-                <div class="grid-item">
-                    <img src="list3.jpg" alt="artikel image">
-                    <div class="grid-text">
-                        <div class="grid-title">
-                            <h2>Pengertian Laundry : Tugas,
-                                Struktur Organisasi dan SOP</h2>
-                        </div>
-                        <div class="grid-value">
-                            <p>Laundry (binatu) merupakan salah satu bagian dari department</p>
-                        </div>
+                <div class="article__item">
+                    <img src="img/article__item-image.png" alt="" class="article__item-image">
+                    <div class="article__item-text">
+                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
+                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
                     </div>
-                    <div class="btn-grid"><i class="fa-solid fa-book-open"></i>
-                        <a href="">Baca Artikel</a></div>
+                    <div class="article__item-button">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <img src="img/article__item-image.png" alt="" class="article__item-image">
+                    <div class="article__item-text">
+                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
+                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                    </div>
+                    <div class="article__item-button">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <img src="img/article__item-image.png" alt="" class="article__item-image">
+                    <div class="article__item-text">
+                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
+                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                    </div>
+                    <div class="article__item-button">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
+                    </div>
+                </div>
+                <div class="article__item">
+                    <img src="img/article__item-image.png" alt="" class="article__item-image">
+                    <div class="article__item-text">
+                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
+                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                    </div>
+                    <div class="article__item-button">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>Baca Artikel</p>
+                    </div>
                 </div>
             </div>
-        </div>
+
+        </main>
     </div>
     <!-- custom js     -->
     <script src="js/script_user-artikel-laundry.js"></script>

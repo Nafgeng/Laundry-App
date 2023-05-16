@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('tanggal');
             $table->string('jenislaundry');
             $table->string('typelaundry');
-            $table->enum('statuslaundry', ['siap diambil','proses','sudah diambil']);
+            $table->enum('statuslaundry', ['siap diambil','proses','sudahdiambil']);
             $table->text('image')->nullable();
             $table->timestamps();
         });

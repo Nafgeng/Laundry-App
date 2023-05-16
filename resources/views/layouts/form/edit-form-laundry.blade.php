@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Tambah Data</title>
+    <title>Form Edit Data</title>
 
-    <link rel="stylesheet" href=css/form.css>
+    <link rel="stylesheet" href="{{ asset('css/form.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,30 +32,31 @@
         </div>
 
         <div class="form-container">
-            <form action="{{ url('/add-laundry') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ url("/edit/$laundry->id/edit_laundry") }}" method="POST" enctype="multipart/form-data">
                 @csrf
+                @method('PUT')
                 <div id="form-item1" class="form-item" >
                     <h3>Nama Pelanggan</h3>
-                    <input type="text" placeholder="isi nama customer disini" name="name">
+                    <input type="text" placeholder="isi nama customer disini" name="name" readonly value="{{ $laundry->name }}">
                 </div>
         <div id="form-item2" class="form-item">
             <h3>Tanggal Laundry Selesai</h3>
-            <input type="date" placeholder="isi tanggal laundry selesai disini" name="tanggal">
+            <input type="date" placeholder="isi tanggal laundry selesai disini" name="tanggal" readonly value="{{ $laundry->tanggal }}">
         </div>
         <div id="form-item3" class="form-item">
             <h3>Jenis Laundry</h3>
-            <input type="text" placeholder="isi jenis laundry disini" name="jenislaundry">
+            <input type="text" placeholder="isi jenis laundry disini" name="jenislaundry" readonly value="{{ $laundry->jenislaundry }}">
         </div>
         <div id="form-item4" class="form-item">
             <h3>Type Laundry</h3>
-            <input type="text" placeholder="isi type laundry disini" name="typelaundry">
+            <input type="text" placeholder="isi type laundry disini" name="typelaundry" readonly value="{{ $laundry->typelaundry }}">
         </div>
         <div id="form-item5" class="form-item">
             <h3>Status Laundry</h3>
             <select name="statuslaundry" id="laundry-status"       class="status-laundry" >
-                <option id="status1" value="siap diambil">SIAP DIAMBIL</option>
-                <option id="status2" value="proses">PROSES</option>
-                <option id="status3" value="sudahdiambil">SUDAH DIAMBIL</option>
+                <option id="status1" value="siap diambil" {{ $laundry->statuslaundry == 'siap diambil' ? 'selected' : '' }}>SIAP DIAMBIL</option>
+                <option id="status2" value="proses" {{ $laundry->statuslaundry == 'proses' ? 'selected' : '' }}>PROSES</option>
+                <option id="status3" value="sudahdiambil" {{ $laundry->statuslaundry == 'sudahdiambil' ? 'selected' : '' }}>SUDAH DIAMBIL</option>
             </select>
             </div>
             <div id="sudahdiambil-div" class="content">
@@ -69,7 +70,7 @@
         </div>
     </main>
 
-    <script src="js/form.js"></script
+    <script src="{{ asset('js/form.js') }}"></script
 
 </body>
 </html>

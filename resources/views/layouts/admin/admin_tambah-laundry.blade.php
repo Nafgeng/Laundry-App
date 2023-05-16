@@ -85,41 +85,47 @@
                     </div>
                 </div>
                 <div class="main-content__list">
+                    @foreach ($laundry as $l)
                     <div class="main-content__item">
                         <div class="main-content__card">
-                            <h2 class="card-number">1</h2>
+                            <h2 class="card-number">{{ $loop->iteration }}</h2>
 
                             <div class="card-container">
                                 <div class="card-container__left">
                                     <img src="image/laundry.png" alt="">
                                     <div class="card-container__left-text">
                                         <div class="text-header">
-                                            <h2>John Doe</h2>
-                                            <h5>Fri, 27 Jan 2023</h5>
+                                            <h2>{{ $l->name }}</h2>
+                                            <h5>{{ \Carbon\Carbon::parse($l->tanggal)->format('d-M-Y') }}</h5>
                                         </div>
-                                        <h5>Type : Express 8 Jam</h5>
+                                        <h5>Type : {{ $l->jenislaundry }}</h5>
                                     </div>
                                 </div>
                                 <div class="card-container__right">
                                     <div class="card-container__right-status">
-                                        SIAP DIAMBIL
+                                        {{ $l->statuslaundry }}
                                     </div>
-                                    <h3>3 Kg</h3>
+                                    <h3>{{ $l->typelaundry }}</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="main-content__action">
-                            <div class="action__see" onclick="window.open('image/contoh.jpg', '_blank')" title="Lihat Foto">
+                            <div class="action__see" onclick="window.open('{{ url('storage/' . $l->image) }}', '_blank')" title="Lihat Foto">
                                 <i class="fa-solid fa-eye"></i>
                             </div>
-                            <div class="action__edit" title="Edit Data">
+                            <a class="action__edit" type="submit" href="{{ url("/edit_laundry/$l->id") }}" title="Edit Data">
                                 <i class="fa-solid fa-pen"></i>
-                            </div>
-                            <div class="action__delete" title="Hapus Data">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
+                            </a>
+                            <form method="POST" action="{{ url("delete/$l->id") }}" enctype="multipart/form-data">
+                                @csrf
+                                @method('DELETE')
+                                <button class="action__delete" type="submit"  title="Hapus Data">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>

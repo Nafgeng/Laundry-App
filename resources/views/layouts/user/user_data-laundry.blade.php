@@ -60,10 +60,13 @@
 
                 <div class="main-grid">
                     <div class="main-content">
-                        <div class="main-content__search">
-                            <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
-                            <input type="text" placeholder="search" style="width: 100%;">
+                        <form action="/user_data_laundry" method="GET">
+                        <div class="main-content__search">       
+                                <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
+                                <input type="text" name="search" placeholder="Search" style="width: 100%;">   
                         </div>
+                    </form>
+                        
                         <div class="tabs">
                             <div class="main-content__tab-header">
                                 <button id="tabs1" href="#tab1" data-tab="tab1" class="tab-indicator active">SIAP DIAMBIL</button>
@@ -72,81 +75,86 @@
                             </div>
 
                             <div id="tab1" class="main-content__list">
+                                @foreach ($siapDiambilLaundry as $sp)
                                 <div class="main-content__card">
-                                    <h2 class="card-number">1</h2>
+                                    <h2 class="card-number">{{ $loop->iteration }}</h2>
 
                                     <div class="card-container">
                                         <div class="card-container__left">
                                             <img src="img/laundry.png" alt="">
                                             <div class="card-container__left-text">
                                                 <div class="text-header">
-                                                    <h2>John Doe</h2>
-                                                    <h5>Fri, 27 Jan 2023</h5>
+                                                    <h2>{{ $sp->name }}</h2>
+                                                    <h5>{{ \Carbon\Carbon::parse($sp->tanggal)->format('d-M-Y') }}</h5>
                                                 </div>
-                                                <h5>Type : Express 8 Jam</h5>
+                                                <h5>Type : {{ $sp->typelaundry }}</h5>
                                             </div>
                                         </div>
                                         <div class="card-container__right">
                                             <div class="card-container__right-status">
-                                                SIAP DIAMBIL
+                                                {{ $sp->statuslaundry }}
                                             </div>
-                                            <h3>3 Kg</h3>
+                                            <h3>{{ $sp->jenislaundry }}</h3>
                                         </div>
                                     </div>
 
                                 </div>
+                                @endforeach                             
                             </div>
 
 
                             <div id="tab2" class="main-content__list">
+                                @foreach ($prosesLaundry as $pl)
                                 <div class="main-content__card">
-                                    <h2 class="card-number">1</h2>
+                                    <h2 class="card-number">{{ $loop->iteration }}</h2>
 
                                     <div class="card-container">
                                         <div class="card-container__left">
                                             <img src="img/laundry.png" alt="">
                                             <div class="card-container__left-text">
                                                 <div class="text-header">
-                                                    <h2>John Doe</h2>
-                                                    <h5>Fri, 27 Jan 2023</h5>
+                                                    <h2>{{ $pl->name }}</h2>
+                                                    <h5>{{ \Carbon\Carbon::parse($pl->tanggal)->format('d-M-Y') }}</h5>
                                                 </div>
-                                                <h5>Type : Express 8 Jam</h5>
+                                                <h5>Type : {{ $pl->typelaundry }}</h5>
                                             </div>
                                         </div>
                                         <div class="card-container__right">
                                             <div class="card-container__right-status-proses">
-                                                PROSES
+                                                {{ $pl->statuslaundry }}
                                             </div>
-                                            <h3>3 Kg</h3>
+                                            <h3>{{ $pl->jenislaundry }}</h3>
                                         </div>
                                     </div>
 
                                 </div>
+                                @endforeach                                
                             </div>
                             <div id="tab3" class="main-content__list">
+                                @foreach ($sudahDiambilLaundry as $sdl)
                                 <div class="main-content__card">
-                                    <h2 class="card-number">1</h2>
+                                    <h2 class="card-number">{{ $loop->iteration }}</h2>
 
                                     <div class="card-container">
                                         <div class="card-container__left">
                                             <img src="img/laundry.png" alt="">
                                             <div class="card-container__left-text">
                                                 <div class="text-header">
-                                                    <h2>John Doe</h2>
-                                                    <h5>Fri, 27 Jan 2023</h5>
+                                                    <h2>{{ $sdl->name }}</h2>
+                                                    <h5>{{ $sdl->tanggal }}</h5>
                                                 </div>
-                                                <h5>Type : Express 8 Jam</h5>
+                                                <h5>Type : {{ $sdl->typelaundry }}</h5>
                                             </div>
                                         </div>
                                         <div class="card-container__right">
                                             <div class="card-container__right-status-diambil">
-                                                SUDAH DIAMBIL
+                                                {{ $sdl->statuslaundry }}
                                             </div>
-                                            <h3>3 Kg</h3>
+                                            <h3>{{ $sdl->jenislaundry }}</h3>
                                         </div>
                                     </div>
-
                                 </div>
+                                @endforeach      
                             </div>
                         </div>
                     </div>

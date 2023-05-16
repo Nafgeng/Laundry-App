@@ -25,6 +25,8 @@ Route::get('redirects', [CheckRoleController::class, 'check_role']);
 
 //view form
 Route::get('/form_laundry', [AdminController::class, 'form_laundry']);
+Route::get('/edit_laundry/{id}', [AdminController::class, 'edit_form']);
+Route::put('/edit/{id}/edit_laundry', [AdminController::class, 'update']);
 Route::post('/add-laundry', [AdminController::class, 'store']); //route tambah data
 
 //view admin
@@ -34,3 +36,6 @@ Route::get('/admin_tambah_laundry', [AdminController::class, 'admin_tambah_laund
 //view user
 Route::get('/user_data_laundry', [UserController::class, 'user_data_laundry']);
 Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundry']);
+
+// Delete
+Route::delete('/delete/{id}', [AdminController::class, 'destroy']);

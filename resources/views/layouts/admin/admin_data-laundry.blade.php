@@ -76,28 +76,28 @@
                 <div class="grid-card__item" style="background-color: #6C4AB6;">
                     <img src="img/icon-1.png" alt="">
                     <div class="grid-card__item-text">
-                        <h1 style="color: #fff;">300</h1>
+                        <h1 style="color: #fff;">{{ $laundryCount }}</h1>
                         <h4 style="color: #fff;">Total Data Laundry</h4>
                     </div>
                 </div>
                 <div class="grid-card__item" style="background-color: #fff;">
                     <img src="img/icon-2.png" alt="">
                     <div class="grid-card__item-text">
-                        <h1>300</h1>
+                        <h1>{{ $siapDiambilCount }}</h1>
                         <h4>Laundry Siap Diambil</h4>
                     </div>
                 </div>
                 <div class="grid-card__item" style="background-color: #fff;">
                     <img src="img/icon-3.png" alt="">
                     <div class="grid-card__item-text">
-                        <h1>300</h1>
+                        <h1>{{ $prosesCount }}</h1>
                         <h4>Laundry Dalam Proses</h4>
                     </div>
                 </div>
                 <div class="grid-card__item" style="background-color: #fff;">
                     <img src="img/icon-4.png" alt="">
                     <div class="grid-card__item-text">
-                        <h1>300</h1>
+                        <h1>{{ $sudahDiambilCount }}</h1>
                         <h4>Laundry Sudah Diambil</h4>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                             <tbody>
                                 @foreach ($laundry as $l)
                                 <tr class="table-row__body">
-                                    <td class="missing">{{ $l->id }}</td>
+                                    <td class="missing">{{ $loop->iteration }}</td>
                                     <td>{{ $l->name }}</td>
                                     <td class="missing">{{ \Carbon\Carbon::parse($l->tanggal)->format('d-M-Y') }}</td>
                                     <td class="missing">{{ $l->jenislaundry }}</td>
@@ -142,7 +142,7 @@
                                     <td><div class="status-button">
                                         {{ $l->statuslaundry }}
                                     </div></td>
-                                    <td ><div onclick="window.open('image/contoh.jpg', '_blank')" class="eye-button" id="eye-button">
+                                    <td ><div  onclick="window.open('{{ url('storage/' . $l->image) }}', '_blank')" class="eye-button" id="eye-button">
                                         <i class="fa-sharp fa-solid fa-eye"></i>
                                     </div></td>
                                 </tr>

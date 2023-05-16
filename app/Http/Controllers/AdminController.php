@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use App\Models\Laundry;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -19,8 +20,13 @@ class AdminController extends Controller
     //ADMIN VIEW
     public function admin_data_laundry()
     {
+        $laundryCount = Laundry::count();
+        $siapDiambilCount = Laundry::where('statuslaundry', 'siap diambil')->count();
+        $prosesCount = Laundry::where('statuslaundry', 'proses')->count();
+        $sudahDiambilCount = Laundry::where('statuslaundry', 'sudahdiambil')->count();
+
         $laundry = Laundry::all();
-        return view('layouts.admin.admin_data-laundry', compact('laundry'));
+        return view('layouts.admin.admin_data-laundry', compact('laundry', 'laundryCount', 'siapDiambilCount', 'prosesCount', 'sudahDiambilCount'));
     }
 
     public function admin_tambah_laundry()
@@ -34,6 +40,31 @@ class AdminController extends Controller
     public function form_laundry()
     {
         return view('layouts.form.form-laundry');
+    }
+
+    public function edit_form($id)
+    {
+        $laundry = Laundry::find($id);
+        return view('layouts.form.edit-form-laundry', compact('laundry'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        if(empty($request->file('image'))) {
+            $laundry = Laundry::find($id);
+    
+            $laundry->update([
+                'statuslaundry' => $request->statuslaundry,
+            ]);
+            return redirect('/admin_tambah_laundry');
+            } else {
+                $laundry = Laundry::find($id);
+                $laundry->update([
+                'statuslaundry' => $request->statuslaundry,
+                'image' => $request->file('image')->store('laundry'),
+            ]);
+            return redirect('/admin_tambah_laundry');
+            }
     }
 
     
@@ -57,19 +88,18 @@ class AdminController extends Controller
         return redirect('/admin_tambah_laundry');
     }
 
-    // public function show($param)
-    // {
-        
-    // }
+    public function destroy(Laundry $laundry, $id)
+{
+    $laundry = Laundry::find($id);
 
-    // public function update($key)
-    // {
-        
-    // }
+    if ($laundry->image) {
+        Storage::delete($laundry->image); // Hapus gambar jika tersedia
+    }
 
-    // public function destroy($key)
-    // {
-        
-    // }
+    $laundry->delete(); // Hapus data
+
+    return redirect('/admin_tambah_laundry');
+}
+
 
 }

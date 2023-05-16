@@ -111,8 +111,8 @@
                 <div class="article__item">
                     <img src="img/article__item-image.png" alt="" class="article__item-image">
                     <div class="article__item-text">
-                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
-                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                        <h1>4 Alasan Pakaian Laundry Lebih Wangi Daripada Cuci Sendiri</h1>
+                        <h3>Apakah kamu pernah menyadari kalau pakaian yang kamu cuci sendiri di rumah sangat berbeda dengan pakaian yang dicuci oleh jasa pencucian atau laundry?</h3>
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
@@ -122,8 +122,8 @@
                 <div class="article__item">
                     <img src="img/article__item-image.png" alt="" class="article__item-image">
                     <div class="article__item-text">
-                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
-                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                        <h1>Tumbuh 50 Persen, Indonesia Berpotensi Besar Jadi Pasar Utama Bisnis Laundry</h1>
+                        <h3>Indonesia memiliki potensi besar dalam menjadi pasar utama bisnis laundry dengan melihat pertumbuhan signifikan yang terjadi dari tahun ke tahun. Selama periode 2021-2022 saja, usaha laundry di Indonesia diperkirakan tumbuh sebesar 50 persen. Hal ini terlihat dari banyaknya penetrasi dan perluasan bisnis yang dilakukan oleh sejumlah pelaku bisnis di industri ini.</h3>
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
@@ -133,8 +133,8 @@
                 <div class="article__item">
                     <img src="img/article__item-image.png" alt="" class="article__item-image">
                     <div class="article__item-text">
-                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
-                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                        <h1>Tuntutan Konsumen Semakin Tinggi, Industri Laundry dan Klining Tingkatkan Kualitas dan Teknologi</h1>
+                        <h3>Sektor usaha laundry kian menjanjikan seiring dengan kebutuhan kebutuhan rumah tangga dan industri. Terlebih lagi, selama pandemi, kebersihan seolah menjadi hal prioritas bagi siapapun.</h3>
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
@@ -144,8 +144,8 @@
                 <div class="article__item">
                     <img src="img/article__item-image.png" alt="" class="article__item-image">
                     <div class="article__item-text">
-                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
-                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
+                        <h1>Bisnis Laundry Kian Wangi, Penjualan Mesin Cuci Melonjak 50 Persen</h1>
+                        <h3>Salah satu bisnis yang tengah menjamur di kalangan masyarakat saat ini adalah laundry . Merebaknya bisnis cucian ini terlihat dari data penjualan mesin cuci komersial di 2022 yang mencatatkan pertumbuhan penjualan hingga 50% dibanding 2021</h3>
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>

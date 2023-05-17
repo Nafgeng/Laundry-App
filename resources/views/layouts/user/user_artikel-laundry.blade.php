@@ -36,7 +36,7 @@
                     <a href="{{url('/user_artikel_laundry')}}">
                         <div class="active-sidebar-list__item-button">
                             <i class="fa-solid fa-book-open"></i>
-                            <p>Artikel</p>
+                            <p>Artikel Laundry</p>
                         </div>
                     </a>
                 </li>
@@ -80,7 +80,7 @@
                     <h3>Meskipun mencuci pakaian merupakan aktivitas harian, namun beberapa ada yang menitipkan baju kotornya di tempat pencucian atau biasa kita sebut laundry. Kebanyakan dari pengguna jasa laundry menginginkan bajunya rapi dan wangi tanpa harus mencucinya di rumah.</h3>
                     <div class="article__button-head">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel1')}}">Baca Artikel</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel2')}}">Baca Artikel</a>
                     </div>
                 </div>
                 <div class="article__item">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel3')}}">Baca Artikel</a>
                     </div>
                 </div>
                 <div class="article__item">
@@ -116,7 +116,7 @@
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel4')}}">Baca Artikel</a>
                     </div>
                 </div>
                 <div class="article__item">
@@ -127,7 +127,7 @@
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel5')}}">Baca Artikel</a>
                     </div>
                 </div>
                 <div class="article__item">
@@ -138,7 +138,7 @@
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel6')}}">Baca Artikel</a>
                     </div>
                 </div>
                 <div class="article__item">
@@ -149,7 +149,7 @@
                     </div>
                     <div class="article__item-button">
                         <i class="fa-solid fa-book-open"></i>
-                        <p>Baca Artikel</p>
+                        <a href="{{url('/user_detail_artikel7')}}">Baca Artikel</a>
                     </div>
                 </div>
             </div>

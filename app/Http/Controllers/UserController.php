@@ -40,4 +40,42 @@ class UserController extends Controller
         return view('layouts.user.user_artikel-laundry');
     }
 
+
+    //-------- DETAIL ARTIKEL VIEWW --------//
+
+    public function user_detail_artike1()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel1');
+    }
+
+    public function user_detail_artikel2()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel2');
+    }
+
+    public function user_detail_artike3()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel3');
+    }
+
+    public function user_detail_artike4()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel4');
+    }
+
+    public function user_detail_artike5()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel5');
+    }
+
+    public function user_detail_artike6()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel6');
+    }
+
+    public function user_detail_artike7()
+    {
+        return view('layouts.user.detail-artikel.detail-artikel7');
+    }
+
 }

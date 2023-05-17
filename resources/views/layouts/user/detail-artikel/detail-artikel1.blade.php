@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Artikel</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/detail-artikel.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 <body>
     <div class="navbar">
         <a href=""><i class="fa-solid fa-chevron-left"></i></a>
-        <img src="logo.png" alt="logo">
+        <img src="img/logo.png" alt="logo">
     </div>
 
     <main>
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <img src="./img.jpg" alt="image content">
+        <img src="img/list1.jpg" alt="image content">
 
         <div class="main_text">
             <p>Dilansir dari <strong>PanturaPost.id</strong> - Meskipun mencuci pakaian merupakan aktivitas harian, namun beberapa ada yang menitipkan baju kotornya di tempat pencucian atau biasa kita sebut laundry. Kebanyakan dari pengguna jasa laundry menginginkan bajunya rapi dan wangi tanpa harus mencucinya di rumah.</p>

@@ -105,8 +105,6 @@ class AdminController extends Controller
 public function export()
     {
         return Excel::download(new ExportLaundries, 'DataLaundry.xlsx');
-        return Excel::raw(new ExportLaundries, \Maatwebsite\Excel\Excel::XLSX);
-
     }
 
 

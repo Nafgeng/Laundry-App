@@ -203,11 +203,15 @@ main .fa-solid {
     font-weight: 600;
     letter-spacing: 1%;
     gap: 8px;
-    color: #fff;
+    color: white;
     background-color: var(--warning-color);
 }
 
 .article__button-head i {
+    color: #fff;
+}
+
+.article__button-head a {
     color: #fff;
 }
 
@@ -274,6 +278,10 @@ main .fa-solid {
 }
 
 .article__item-button i{
+    color: #fff;
+}
+
+.article__item-button a{
     color: #fff;
 }
 

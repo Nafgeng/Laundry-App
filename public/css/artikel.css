@@ -358,6 +358,7 @@ main .fa-solid {
     }
 
     .article__item img {
+        height: 100px;
         border-radius: 6px;
     }
 

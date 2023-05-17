@@ -61,12 +61,12 @@
                 <div class="main-grid">
                     <div class="main-content">
                         <form action="/user_data_laundry" method="GET">
-                        <div class="main-content__search">       
+                        <div class="main-content__search">
                                 <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
-                                <input type="text" name="search" placeholder="Search" style="width: 100%;">   
+                                <input type="text" name="search" placeholder="Search" style="width: 100%;">
                         </div>
                     </form>
-                        
+
                         <div class="tabs">
                             <div class="main-content__tab-header">
                                 <button id="tabs1" href="#tab1" data-tab="tab1" class="tab-indicator active">SIAP DIAMBIL</button>
@@ -99,7 +99,7 @@
                                     </div>
 
                                 </div>
-                                @endforeach                             
+                                @endforeach
                             </div>
 
 
@@ -128,7 +128,7 @@
                                     </div>
 
                                 </div>
-                                @endforeach                                
+                                @endforeach
                             </div>
                             <div id="tab3" class="main-content__list">
                                 @foreach ($sudahDiambilLaundry as $sdl)
@@ -154,7 +154,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach      
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                                 <p>Pesan Antar Jemput Aja</p>
                             </div>
 
-                            <a href="#" class="main-support__card-button">
+                            <a href="https://wa.me/6285694791449?text=Halo%20%F0%9F%91%8B,%20saya%20ingin%20menggunakan%20layanan%20antar%20jemput,%20apakah%20bisa?" class="main-support__card-button">
                                 <i class="fa-solid fa-truck-fast"></i>
                                 <p style="color: #fff;">Pesan Antar Jemput</p>
                             </a>

@@ -33,7 +33,6 @@ class AdminController extends Controller
 
     public function admin_tambah_laundry()
     {
-
         $laundry = Laundry::all();
         return view('layouts.admin.admin_tambah-laundry', compact('laundry'));
     }

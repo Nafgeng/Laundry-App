@@ -61,10 +61,19 @@
                 <div class="main-grid">
                     <div class="main-content">
                         <form action="/user_data_laundry" method="GET">
+<<<<<<< Updated upstream
                         <div class="main-content__search">
                                 <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
                                 <input type="text" name="search" placeholder="Search" style="width: 100%;">
                         </div>
+=======
+                            <div class="main-content__search">       
+                                <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
+                                <input type="text" name="search" placeholder="Search" style="width: 100%;">   
+                            </div>
+                        </form>
+                        
+>>>>>>> Stashed changes
                     </form>
 
                         <div class="tabs">

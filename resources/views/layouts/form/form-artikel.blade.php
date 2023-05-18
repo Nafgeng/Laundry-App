@@ -48,6 +48,7 @@
                 <h3 style="margin-bottom: 1rem; color: #432c7a;">Gambar Artikel</h3>
                 <input type="file" id="upload" accept=".jpg,.jpeg,.png" name="image">
             </div>
+        </div>
 
             <button class="btn-submit" type="submit">SUBMIT</button>
 

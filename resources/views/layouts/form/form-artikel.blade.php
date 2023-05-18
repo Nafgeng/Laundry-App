@@ -15,6 +15,9 @@
 
     <script src="https://kit.fontawesome.com/c6a35e66f0.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
+
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                 </div>
         <div id="form-item2" class="form-item">
             <h3>Content Artikel</h3>
-            <textarea row="100" cols="100" type="text" placeholder="isi content artikel selesai disini" name="content">
+            <textarea row="100" cols="100" type="text" id="editor" placeholder="isi content artikel selesai disini" name="content">
 
             </textarea>
         </div>
@@ -57,7 +60,17 @@
         </div>
     </main>
 
-    <script src="js/form.js"></script
+    <script src="js/form.js"></script>
+
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
 
 </body>
+
+
 </html>

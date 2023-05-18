@@ -16,6 +16,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/58b4b4ea39.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
+
+
 </head>
 <body>
     <div class="navbar">
@@ -39,8 +42,17 @@
         <img src="{{ url('storage/' . $detail->image) }}" alt="image content">
 
         <article class="main_text">
-            <p>{{ $detail->content }}</p>
+            <p>{!! $detail->content !!}</p>
         </article>
     </main>
 </body>
 </html>
+
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+

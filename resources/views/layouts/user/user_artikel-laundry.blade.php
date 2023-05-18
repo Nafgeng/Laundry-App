@@ -80,24 +80,29 @@
                     <h3>Meskipun mencuci pakaian merupakan aktivitas harian, namun beberapa ada yang menitipkan baju kotornya di tempat pencucian atau biasa kita sebut laundry. Kebanyakan dari pengguna jasa laundry menginginkan bajunya rapi dan wangi tanpa harus mencucinya di rumah.</h3>
                     <div class="article__button-head">
                         <i class="fa-solid fa-book-open"></i>
-                        <a href="{{url('/user_detail_artikel1')}}">Baca Artikel</a>
+                        <a href="{{url('/user_detail_artikel')}}">Baca Artikel</a>
                     </div>
                 </div>
             </div>
 
+            
             <div class="article__list">
+                @foreach ($artikel as $a)
                 <div class="article__item">
-                    <img src="img/list2.jpg" alt="" class="article__item-image">
-                    <div class="article__item-text">
-                        <h1>Pengertian Laundry : Tugas, Struktur Organisasi dan SOP</h1>
-                        <h3>Laundry (binatu) merupakan salah satu bagian dari department Housekeeping sebuah hotel yang memberikan layanan jasa pencucian baik pakaian tamu, seragam karyawan, hingga seluruh linen hotel, restaurant, dan balai pertemuan.</h3>
-                    </div>
-                    <div class="article__item-button">
-                        <i class="fa-solid fa-book-open"></i>
-                        <a href="{{url('/user_detail_artikel2')}}">Baca Artikel</a>
+                    <img src="{{ url('storage/' . $a->image) }}" alt="" class="article__item-image">
+                <div class="article__item-text">
+                    <h1>{{ $a->judul }}</h1>
+                    <h3>{{ $a->content }}</h3>
+                </div>
+                <div class="article__item-button">
+                    <i class="fa-solid fa-book-open"></i>
+                    <a href="{{ url("/user_detail_artikel/$a->id") }}">Baca Artikel</a>
                     </div>
                 </div>
+                @endforeach
+
             </div>
+            
 
         </main>
     </div>

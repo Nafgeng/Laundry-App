@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
 use App\Models\Laundry;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -37,7 +38,8 @@ class UserController extends Controller
 
     public function user_artikel_laundry()
     {
-        return view('layouts.user.user_artikel-laundry');
+        $artikel = Artikel::all();
+        return view('layouts.user.user_artikel-laundry', compact('artikel'));
     }
 
 
@@ -46,6 +48,12 @@ class UserController extends Controller
     public function user_detail_artikel()
     {
         return view('layouts.user.detail-artikel.detail-artikel');
+    }
+
+    public function user_detail_artikel2($id)
+    {
+        $detail = Artikel::find($id);
+        return view('layouts.user.detail-artikel.user_detail_artikel2', compact('detail'));
     }
 
 }

@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="navbar">
-        <a href=""><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="{{url('/user_artikel_laundry')}}"><i class="fa-solid fa-chevron-left"></i></a>
         <img src="img/logo.png" alt="logo">
     </div>
 

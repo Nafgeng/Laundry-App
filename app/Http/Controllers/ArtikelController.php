@@ -12,23 +12,29 @@ class ArtikelController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function form_artikel()
     {
-        //
+        return view('layouts.form.form-artikel');
     }
+    
 
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
-        //
+        Artikel::create([
+            'judul' => $request->judul,
+            'content' => $request->content,
+            'image' => $request->file('image')->store('laundry'),
+        ]);
+        return redirect('/admin_tambah_laundry');
     }
 
     /**

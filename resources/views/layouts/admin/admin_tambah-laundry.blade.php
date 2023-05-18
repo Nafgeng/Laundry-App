@@ -82,7 +82,7 @@
                                             <h4>Tambah Data</h4>
                                         </button>
                                     </a>
-                                    <a href="{{url('/form_laundry')}}">
+                                    <a href="{{url('/form_artikel')}}">
                                         <button class="table-header__button">
                                             <i class="fa-solid fa-book-open"></i>
                                             <h4>Tambah Artikel</h4>

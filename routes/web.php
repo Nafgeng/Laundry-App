@@ -25,6 +25,7 @@ Route::get('redirects', [CheckRoleController::class, 'check_role']);
 
 //view form
 Route::get('/form_laundry', [AdminController::class, 'form_laundry']);
+Route::get('/form_artikel', [AdminController::class, 'form_artikel']);
 Route::get('/edit_laundry/{id}', [AdminController::class, 'edit_form']);
 Route::put('/edit/{id}/edit_laundry', [AdminController::class, 'update']);
 Route::post('/add-laundry', [AdminController::class, 'store']); //route tambah data

@@ -74,11 +74,18 @@
                             <h3>Tetap dipantau terus ya perkembangan tiap data laundry</h3>
                         </div>
                         <div style="display: flex;
-                                    align-items: center;">
+                                    align-items: center;
+                                    gap: 1rem;">
                                     <a href="{{url('/form_laundry')}}">
                                         <button class="table-header__button">
                                             <i class="fa-solid fa-file-circle-plus"></i>
                                             <h4>Tambah Data</h4>
+                                        </button>
+                                    </a>
+                                    <a href="{{url('/form_laundry')}}">
+                                        <button class="table-header__button">
+                                            <i class="fa-solid fa-book-open"></i>
+                                            <h4>Tambah Artikel</h4>
                                         </button>
                                     </a>
                         </div>

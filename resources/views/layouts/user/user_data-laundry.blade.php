@@ -61,12 +61,12 @@
                 <div class="main-grid">
                     <div class="main-content">
                         <form action="/user_data_laundry" method="GET">
-                            <div class="main-content__search">       
+                            <div class="main-content__search">
                                 <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
-                                <input type="text" name="search" placeholder="Search" style="width: 100%;">   
+                                <input type="text" name="search" placeholder="Search" style="width: 100%;">
                             </div>
                         </form>
-                        
+
                     </form>
 
                         <div class="tabs">
@@ -180,7 +180,7 @@
                                 <p>Pesan Antar Jemput Aja</p>
                             </div>
 
-                            <a href="https://wa.me/6285694791449?text=Halo%20%F0%9F%91%8B,%20saya%20ingin%20menggunakan%20layanan%20antar%20jemput,%20apakah%20bisa?" class="main-support__card-button">
+                            <a href="https://wa.me/6285885663292?text=Halo%20%F0%9F%91%8B%20%0ASaya%20ingin%20memesan%20layanan%20antar%20jemput,%20apakah%20bisa?" class="main-support__card-button">
                                 <i class="fa-solid fa-truck-fast"></i>
                                 <p style="color: #fff;">Pesan Antar Jemput</p>
                             </a>

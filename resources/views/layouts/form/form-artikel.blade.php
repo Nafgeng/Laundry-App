@@ -40,7 +40,7 @@
                 </div>
         <div id="form-item2" class="form-item">
             <h3>Content Artikel</h3>
-            <input type="date" placeholder="isi content artikel selesai disini" name="tanggal">
+            <input type="text" placeholder="isi content artikel selesai disini" name="tanggal">
         </div>
         <div id="form-item5" class="form-item">
             <h3>Gambar Artikel</h3>

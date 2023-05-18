@@ -3,10 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CheckRoleController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DataController;
 use App\Http\Controllers\DefaultController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ExportExcelController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,14 +38,7 @@ Route::get('/user_data_laundry', [UserController::class, 'user_data_laundry']);
 Route::get('/user_artikel_laundry', [UserController::class, 'user_artikel_laundry']);
 
 //-------- DETAIL ARTIKEL VIEWW --------//
-Route::get('/user_detail_artikel1', [UserController::class, 'user_detail_artike1']);
-Route::get('/user_detail_artikel2', [UserController::class, 'user_detail_artikel2']);
-Route::get('/user_detail_artikel3', [UserController::class, 'user_detail_artike3']);
-Route::get('/user_detail_artikel4', [UserController::class, 'user_detail_artike4']);
-Route::get('/user_detail_artikel5', [UserController::class, 'user_detail_artike5']);
-Route::get('/user_detail_artikel6', [UserController::class, 'user_detail_artike6']);
-Route::get('/user_detail_artikel7', [UserController::class, 'user_detail_artike7']);
-
+Route::get('/user_detail_artikel', [UserController::class, 'user_detail_artikel']);
 
 // Delete
 Route::delete('/delete/{id}', [AdminController::class, 'destroy']);

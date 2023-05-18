@@ -32,18 +32,19 @@
         </div>
 
         <div class="form-container">
-            <form action="{{ url('/add-laundry') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ url('/add-artikel') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div id="form-item1" class="form-item" >
                     <h3>Judul Artikel</h3>
-                    <input type="text" placeholder="isi judul artikel disini" name="name">
+                    <input type="text" placeholder="isi judul artikel disini" name="judul">
                 </div>
         <div id="form-item2" class="form-item">
             <h3>Content Artikel</h3>
-            <input type="text" placeholder="isi content artikel selesai disini" name="tanggal">
+            <textarea row="100" cols="100" type="text" placeholder="isi content artikel selesai disini" name="content">
+
+            </textarea>
         </div>
         <div id="form-item5" class="form-item">
-            <h3>Gambar Artikel</h3>
             <div id="gambarartikel-div" class="content">
                 <h3 style="margin-bottom: 1rem; color: #432c7a;">Gambar Artikel</h3>
                 <input type="file" id="upload" accept=".jpg,.jpeg,.png" name="image">

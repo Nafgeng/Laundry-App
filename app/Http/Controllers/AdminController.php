@@ -43,6 +43,11 @@ class AdminController extends Controller
         return view('layouts.form.form-laundry');
     }
 
+    public function form_artikel()
+    {
+        return view('layouts.form.form-artikel');
+    }
+
     public function edit_form($id)
     {
         $laundry = Laundry::find($id);

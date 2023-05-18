@@ -61,10 +61,12 @@
                 <div class="main-grid">
                     <div class="main-content">
                         <form action="/user_data_laundry" method="GET">
-                        <div class="main-content__search">
+                            <div class="main-content__search">       
                                 <i class="fa-solid fa-magnifying-glass" style="color: #949da9;"></i>
-                                <input type="text" name="search" placeholder="Search" style="width: 100%;">
-                        </div>
+                                <input type="text" name="search" placeholder="Search" style="width: 100%;">   
+                            </div>
+                        </form>
+                        
                     </form>
 
                         <div class="tabs">

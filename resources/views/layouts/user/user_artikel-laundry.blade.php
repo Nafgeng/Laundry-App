@@ -92,7 +92,7 @@
                     <img src="{{ url('storage/' . $a->image) }}" alt="" class="article__item-image">
                 <div class="article__item-text">
                     <h1>{{ $a->judul }}</h1>
-                    <h3>{{ $a->content }}</h3>
+                    <h3>{!! $a->content !!}</h3>
                 </div>
                 <div class="article__item-button">
                     <i class="fa-solid fa-book-open"></i>

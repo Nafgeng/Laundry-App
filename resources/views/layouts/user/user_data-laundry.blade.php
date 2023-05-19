@@ -168,7 +168,7 @@
                                 <p>silahkan klik tombol di bawah ini</p>
                             </div>
 
-                            <a href="#" class="main-support__card-button">
+                            <a href="https://wa.me/6285885663292?text=Halo%20%F0%9F%91%8B%0ASaya%20ingin%20melaporkan%20bahwa%20ada%20pakaian%20saya%20yang%20hilang,%20apakah%20bisa%20dibantu?" class="main-support__card-button">
                                 <i class="fa-solid fa-triangle-exclamation"></i>
                                 <p style="color: #fff;">Laporkan Kehilangan</p>
                             </a>
@@ -192,7 +192,7 @@
                                 <p>Yuk !! Isi Form Feedbacknya</p>
                             </div>
 
-                            <a href="#" class="main-support__card-button">
+                            <a href="https://forms.gle/9H6fBh98bE1dDn1BA" class="main-support__card-button">
                                 <i class="fa-solid fa-envelope"></i>
                                 <p style="color: #fff;">Form Feedback</p>
                             </a>

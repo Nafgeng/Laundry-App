@@ -137,7 +137,7 @@
             </div>
         </div>
 
-        <script src="js/script_admin-tambah-laundry.js.js"></script>
+        <script src="js/script_admin-tambah-laundry.js"></script>
 
 </body>
 </html>

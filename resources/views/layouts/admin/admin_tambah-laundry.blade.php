@@ -123,10 +123,10 @@
                             <a class="action__edit" type="submit" href="{{ url("/edit_laundry/$l->id") }}" title="Edit Data">
                                 <i class="fa-solid fa-pen"></i>
                             </a>
-                            <form method="POST" action="{{ url("delete/$l->id") }}" enctype="multipart/form-data">
+                            <form method="POST" action="{{ url("delete/$l->id") }}" enctype="multipart/form-data" onsubmit="return confirm('Anda Yakin Ingin Menghapus data?')" >
                                 @csrf
                                 @method('DELETE')
-                                <button class="action__delete" type="submit"  title="Hapus Data">
+                                <button class="action__delete" type="submit" title="Hapus Data">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
                             </form>

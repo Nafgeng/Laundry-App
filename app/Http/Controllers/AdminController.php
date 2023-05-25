@@ -91,17 +91,17 @@ class AdminController extends Controller
     }
 
     public function destroy(Laundry $laundry, $id)
-{
-    $laundry = Laundry::find($id);
+    {
+        $laundry = Laundry::find($id);
 
-    if ($laundry->image) {
-        Storage::delete($laundry->image); // Hapus gambar jika tersedia
+        if ($laundry->image) {
+            Storage::delete($laundry->image); // Hapus gambar jika tersedia
+        }
+
+        $laundry->delete(); // Hapus data
+
+        return redirect('/admin_tambah_laundry')->with('status', 'Data Berhasil Dihapus !');
     }
-
-    $laundry->delete(); // Hapus data
-
-    return redirect('/admin_tambah_laundry');
-}
 
 public function export()
     {

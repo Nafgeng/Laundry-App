@@ -36,27 +36,30 @@
                 @csrf
                 <div id="form-item1" class="form-item" >
                     <h3>Nama Pelanggan</h3>
-                    <input type="text" placeholder="isi nama customer disini" name="name">
+                    <input type="text" placeholder="isi nama customer disini" name="name" value="{{ old('name') }}">
+
                 </div>
         <div id="form-item2" class="form-item">
             <h3>Tanggal Laundry Selesai</h3>
-            <input type="date" placeholder="isi tanggal laundry selesai disini" name="tanggal">
+            <input type="date" placeholder="isi tanggal laundry selesai disini" name="tanggal" value="{{ old('tanggal') }}">
         </div>
         <div id="form-item3" class="form-item">
             <h3>Jenis Laundry</h3>
-            <input type="text" placeholder="isi jenis laundry disini" name="jenislaundry">
+            <input type="text" placeholder="isi jenis laundry disini" name="jenislaundry" value="{{ old('jenislaundry') }}">
         </div>
         <div id="form-item4" class="form-item">
             <h3>Type Laundry</h3>
-            <input type="text" placeholder="isi type laundry disini" name="typelaundry">
+            <input type="text" placeholder="isi type laundry disini" name="typelaundry" 
+            value="{{ old('typelaundry') }}">
         </div>
         <div id="form-item5" class="form-item">
             <h3>Status Laundry</h3>
-            <select name="statuslaundry" id="laundry-status"       class="status-laundry" >
+            <select name="statuslaundry" id="laundry-status" class="status-laundry">
                 <option id="status1" value="siap diambil">SIAP DIAMBIL</option>
                 <option id="status2" value="proses">PROSES</option>
                 <option id="status3" value="sudahdiambil">SUDAH DIAMBIL</option>
             </select>
+
             </div>
             <div id="sudahdiambil-div" class="content">
                 <h3 style="margin-bottom: 1rem; color: #432c7a;">Bukti Foto</h3>

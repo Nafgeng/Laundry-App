@@ -60,7 +60,15 @@
         </div>
     </main>
 
-    <script src="js/form.js"></script>
+    
+
+</body>
+
+
+</html>
+
+
+<script src="js/form.js"></script>
 
     <script>
         ClassicEditor
@@ -69,8 +77,3 @@
                 console.error( error );
             } );
     </script>
-
-</body>
-
-
-</html>

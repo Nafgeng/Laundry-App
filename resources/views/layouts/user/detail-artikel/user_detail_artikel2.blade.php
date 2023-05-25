@@ -16,6 +16,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/58b4b4ea39.js" crossorigin="anonymous"></script>
 
+    {{-- CKEditor 5 --}}
     <script src="https://cdn.ckeditor.com/ckeditor5/37.1.0/classic/ckeditor.js"></script>
 
 

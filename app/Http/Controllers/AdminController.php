@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
 use App\Exports\ExportLaundries;
 use Carbon\Carbon;
 use App\Models\Laundry;
@@ -43,6 +44,37 @@ class AdminController extends Controller
         return view('layouts.form.form-laundry');
     }
 
+    public function store(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'tanggal' => 'required|date',
+            'jenislaundry' => 'required',
+            'typelaundry' => 'required',
+            'statuslaundry' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        $laundry = new Laundry();
+        $laundry->name = $request->name;
+        $laundry->tanggal = date('Y-m-d', strtotime($request->tanggal));
+        $laundry->jenislaundry = $request->jenislaundry;
+        $laundry->typelaundry = $request->typelaundry;
+        $laundry->statuslaundry = $request->statuslaundry;
+
+        if ($request->hasFile('image')) {
+        $imagePath = $request->file('image')->store('laundry');
+        $laundry->image = $imagePath;
+    }
+
+        $laundry->save();
+
+        return redirect('/admin_tambah_laundry');
+    }
+
 
     public function edit_form($id)
     {
@@ -71,24 +103,7 @@ class AdminController extends Controller
 
 
 
-    public function store(Request $request)
-    {
-        $laundry = new Laundry();
-        $laundry->name = $request->name;
-        $laundry->tanggal = date('Y-m-d', strtotime($request->tanggal));
-        $laundry->jenislaundry = $request->jenislaundry;
-        $laundry->typelaundry = $request->typelaundry;
-        $laundry->statuslaundry = $request->statuslaundry;
-
-        if ($request->hasFile('image')) {
-        $imagePath = $request->file('image')->store('laundry');
-        $laundry->image = $imagePath;
-    }
-
-        $laundry->save();
-
-        return redirect('/admin_tambah_laundry');
-    }
+    
 
     public function destroy(Laundry $laundry, $id)
     {
